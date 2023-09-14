@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델3-박스모델계산법</title>
+  <style>
+    *{margin: 0; padding:0;}
+    .box{
+      
+      width:400px;
+      height:300px;
+      padding:50px;
+      border:10px solid #f86;
+      margin:50px auto;
+      background-color: #333;
+      color:#fff;
+      
+    }
+
+    .box1{
+      box-sizing:content-box;
+
+
+      /* box-sizing은 박스모델 계산법을 지정 */
+      /* width/height 지정값이 박스모델 content영역지정
+      박스모델 border+padding+content ->border-box
+      박스모델 content영역지정 ->기본값 content-box */
+      /* width 선언된 값은 border+padding+content */
+      
+    }
+
+
+    .box2{
+      box-sizing: border-box;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box box1">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cumque perferendis eos quisquam. Obcaecati atque labore consectetur nobis incidunt maiores totam? Minima placeat maxime quisquam ducimus eos. Delectus, quidem quam?</div>
+      <div>Aliquam earum quibusdam at minima totam fugit, optio consectetur provident non ex, iusto temporibus iste nesciunt ipsam id repudiandae maiores illo libero consequatur vitae. Porro harum temporibus quisquam minus ex!</div>
+    </div>
+    <div class="box box2">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minima commodi necessitatibus cum dolores asperiores repellendus repellat beatae officia quisquam eligendi sit pariatur voluptatem unde autem quibusdam enim doloribus labore.</div>
+      <div>Accusamus mollitia architecto repellat quaerat tenetur sed esse, ratione perspiciatis voluptatum enim tempore sapiente quod at fuga error dolor labore minus, harum quae. Iste aut mollitia voluptatibus fuga quo! Quaerat.</div>
+    </div>
+  </div>
+</body>
+</html>

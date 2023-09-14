@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델2-박스계산법</title>
+
+  <!-- 외부의 css를 불러올때 -->
+  <link rel="stylesheet" href="./asset/css/style1.css">
+  <style>
+
+    *{margin: 0; padding: 0;}
+
+      h1{background-color: red;}
+      .box:nth-of-type(1){margin:50px;}
+      .box:nth-of-type(2){width:500px; margin:100px auto; padding:30px 50px; 
+        border:1px solid black; background-color: aqua;
+      text-align: center;}
+        
+      ul{
+        width:80%;
+        margin:50px auto;
+        background-color: #ccc;
+        /* block */
+        text-align:center; 
+      }
+
+      ul li{
+        background-color: skyblue;
+        width:calc(25% - 4px);
+        /* padding:2rem; */
+        /* inline-block인라인 줄바꿈없는 특징, 블록의 크기지정 특징 */
+        display:inline-block;
+      }
+
+      .test{
+        /* inline레벨은 크기지정을 할 수 없당
+        인라인라벨은 자신이 포함한 내용만큼의 크기를 유지한당 */
+        background-color: blanchedalmond;
+        border:1px solid red;
+        /* padding:50px;
+        margin: 50px; */
+        padding:0 1rem;
+        margin:0 2rem;
+        width:300px;
+      }
+
+      /
+
+  </style>
+</head>
+<h1 class="page-title">
+  웹폰트사용
+</h1>
+<!-- 태그에 인라인으로 css 적용 -->
+<body>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur <span class="test">adipisicing </span>elit. Esse adipisci <span class="test">excepturi harum</span> totam, debitis illo aspernatur blanditiis sit placeat iusto assumenda delectus veniam accusamus, recusandae fugit. Tempore quas nam dignissimos?</div>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sit, recusandae illo numquam commodi nulla magni fugit, minima temporibus deleniti doloribus magnam illum. Quibusdam, saepe magnam eum corporis explicabo fuga.</div>
+
+  <ul>
+    <li><a href="">text1</a></li>
+    <li><a href="">text2</a></li>
+    <li><a href="">text3</a></li>
+    <li><a href="">text4</a></li>
+  </ul>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque veniam voluptatum quaerat unde, nemo nam suscipit dolor vero aliquam laboriosam autem id velit quidem, nobis repellendus praesentium nulla voluptates!</div>
+  
+</body>
+</html>
