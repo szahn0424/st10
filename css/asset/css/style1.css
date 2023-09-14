@@ -1,0 +1,37 @@
+
+/* 골뱅이로 선언되는 선언부 문서 앞에서 작성 */
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;500;700&display=swap');
+
+  /* font-family: 'Noto Sans KR', sans-serif;
+ */
+
+
+/* 공통 */
+
+body{
+  /* font-family: "궁서체","맑은고딕";
+  font-size: 14px;
+  line-height: 1.4; */
+  font:14px/1.4 'Noto Sans KR', sans-serif;
+  color: #17ae30;
+  -webkit-text-size-adjust: none;  
+  /* 방향전환시 텍스트 진하게 되는거 방지하는거임... */
+
+}
+
+.page-title{
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+a:link,
+a:visited{color:#17ae30; text-decoration: none;}
+a:hover{color: aquamarine; text-decoration: underline;}
+
+/* 
+a:link{color:#17ae30; text-decoration: none;}
+a:visited{color:#17ae30; text-decoration: none;}
+a:hover{color:#17ae30; text-decoration: none;} */

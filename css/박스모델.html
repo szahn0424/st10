@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글꼴</title>
+  <!-- 외부의 css를 불러올때 -->
+  <link rel="stylesheet" href="./asset/css/style1.css">
+  <style>
+    .box{
+      /* border-color: black;
+      border-style: solid;
+      border-width: 1px; */
+
+      border:black dotted 10px;
+      border-top-color:#f00;
+      background-color: #ccc;
+      padding:10px 20px 30px 40px;
+      /* 상 우 하 좌 */
+
+      /* 바깥쪽 여백 margin */
+      margin:80px;
+
+      
+    }
+
+    .box:nth-of-type(2){padding:28px 50px; background-color: #f00;}
+    .box:nth-of-type(3){padding:10px 28px 50px; background-color: blue;}
+
+    /* 
+    
+    padding:상하 좌우; 
+    padding:상 좌우 하
+    padding:상 우 하 좌
+    
+    */
+
+    /* 두번째 .box padding을 상우하좌 50px */
+    
+  </style>
+</head>
+<h1 class="page-title">
+  웹폰트사용
+</h1>
+<!-- 태그에 인라인으로 css 적용 -->
+<body>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci excepturi harum totam, debitis illo aspernatur blanditiis sit placeat iusto assumenda delectus veniam accusamus, recusandae fugit. Tempore quas nam dignissimos?</div>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sit, recusandae illo numquam commodi nulla magni fugit, minima temporibus deleniti doloribus magnam illum. Quibusdam, saepe magnam eum corporis explicabo fuga.</div>
+
+  <ul>
+    <li><a href="">text1</a></li>
+    <li><a href="">text2</a></li>
+    <li><a href="">text3</a></li>
+    <li><a href="">text4</a></li>
+  </ul>
+
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque veniam voluptatum quaerat unde, nemo nam suscipit dolor vero aliquam laboriosam autem id velit quidem, nobis repellendus praesentium nulla voluptates!</div>
+  
+</body>
+</html>
