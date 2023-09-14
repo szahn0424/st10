@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css선택자연습</title>
+  <style>
+
+    div{background-color: #807b7b;}
+    section{background-color: #a01c1c;}
+    .container{background-color: hsla(160, 100%, 75%, 0.679);}
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header></header>
+    <div class="container">
+      <section id="section1">
+        section1
+      </section>
+      <h1 id="section2">
+        section2
+        <p>section2&gt;p</p>
+        <div class="box">
+          section2&gt;p&gt;;div.box
+          <h1>section2&gt;p&gt;div.box&gt;h1</h1>
+          <p>section2&gt;p&gt;div.box&gt;p</p>
+          <p>section2&gt;p&gt;div.box&gt;p</p>
+        </div>
+      </section>
+      <section id="section3"></section>
+    </div>
+    <footer></footer>
+  </div>
+
+  </div>
+</body>
+</html>
