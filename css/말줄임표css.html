@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표관련</title>
+  <style>
+    .sample{
+      width:400px;
+      margin: 100px auto;
+      box-sizing: border-box;
+      border:1px solid black;
+      /* text-align: justify; */
+    }
+    .box{padding: 30px;
+      background-color: #827d7d;}
+
+
+    .box p{
+
+      background-color: #f68;
+      height: 150px;
+      margin-bottom:50px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+
+
+    }
+
+    .sample:nth-of-type(2) .box p{
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eius. Eaque porro quis reiciendis voluptatum quia temporibus corporis ratione numquam modi maiores, quae autem unde molestiae illo distinctio! Ab, dolor.</span><span>Architecto amet eaque ducimus sequi qui distinctio omnis necessitatibus doloribus obcaecati quia quasi ipsam mollitia, illo nesciunt asperiores aspernatur ea dolor quos nemo fugiat in libero? Sit, nobis! Quis, earum.</span></p>
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsam eos cum sapiente, recusandae iure odit error quaerat. In ipsam dolore iste! Necessitatibus ducimus quaerat facilis eaque corrupti pariatur molestiae!</span><span>Quis quisquam maiores, cupiditate soluta unde labore numquam dolor nihil libero cumque, laudantium optio, quae quam. Consequuntur iusto expedita quasi eius cupiditate sint suscipit soluta natus accusamus optio, obcaecati similique.</span></p>
+    </div>
+  </div>
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus possimus necessitatibus delectus similique commodi quis dolores doloribus nesciunt neque natus error voluptatibus, incidunt dolorum recusandae veniam quam totam quidem dignissimos.</span><span>Ad, itaque assumenda reprehenderit perferendis repudiandae animi autem commodi laboriosam officiis minima voluptatibus perspiciatis nostrum mollitia ab quasi. Alias reprehenderit nam nulla ratione voluptatem, a unde maiores ex porro est?</span></p>
+      <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sapiente vero, minima ex impedit maxime, soluta excepturi doloribus magni qui aliquam doloremque porro nulla odio accusantium quidem distinctio vitae. Necessitatibus!</span><span>Quam, totam qui adipisci ratione excepturi soluta corporis pariatur voluptate cupiditate sed enim minus recusandae reiciendis suscipit? Aliquam aliquid ut accusamus labore nostrum ipsam, libero modi repellat accusantium veniam voluptatem?</span></p>
+    </div>
+  </div>
+
+  <div class="sample2">
+    <div class="content-wrap">
+      <p>국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다. 모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eum alias laborum. Libero consequuntur excepturi voluptatibus dolores dolorum, earum doloribus molestias eos?</p>
+    </div>
+  </div>
+  <style>
+    .sample2{
+      width:80%;
+      margin:auto;
+    }
+
+    .sample2 p{
+      word-break: keep-all; 
+      /* 한글의 단위단위로 줄바꿈 */
+    }
+  </style>
+  
+</body>
+</html>
