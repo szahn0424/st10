@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블관련css</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .container{margin: 50px;}
+    table.sample{
+      
+      border-collapse: collapse;
+      table-layout: fixed;
+      
+      box-sizing: border-box;
+      width:100%;
+      
+      border:1px solid blue;
+      border-top:10px solid #f86;
+    }
+
+    .sample tr:nth-child(1) th{
+      background-color:#000;
+      color:#fff;
+      padding:1rem;
+    }
+
+
+
+    .sample tr:nth-child(even) td{
+      background-color: gray;
+    }
+
+    .sample tr:nth-child(odd) td{
+      background-color: rgb(50, 48, 48);
+    }
+
+    .sample tr:hover td{
+      background-color: #68f;
+      cursor: pointer;
+    }
+
+
+
+    .sample th:nth-child(1){
+      width:13rem;
+    }
+
+    .sample th:nth-child(3){
+      width:150px;
+    }
+
+    .sample th,
+    .sample td{
+
+      padding:1em;
+      border:1px solid red;
+      box-sizing: border-box;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table class="sample">
+      <tr>
+        <th>title1</th>
+        <th>title2</th>
+        <th>title3</th>
+      </tr>
+      <tr>
+        <td>가나다라마바사</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quam cumque iste dolore maxime. Distinctio ab repudiandae asperiores deleniti expedita odit earum quae velit doloribus, placeat corporis tenetur consequatur praesentium!
+        Possimus reiciendis fuga vero, dolore accusamus cum provident facilis! Placeat beatae voluptatibus esse aperiam voluptatum recusandae nobis, odit nihil, expedita quas libero aliquid fugit. At, nihil alias? Odit, dolorum reiciendis.</td>
+        <td>Ab, ex.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>Autem, aperiam?</td>
+        <td>Libero, provident.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum.</td>
+        <td>Repellendus, veritatis?</td>
+        <td>Recusandae, accusamus?</td>
+      </tr>
+    </table>
+  </div>
+  
+</body>
+</html>
