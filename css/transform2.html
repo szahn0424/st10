@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수직 수평 가운데정렬</title>
+
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{
+      width:100vw;
+      height:100vh;
+      background-color: #ccc;
+      position: relative;
+    }
+
+    /* po */
+
+    .center-box{
+      
+      padding:1em 2em;
+      position: absolute;
+      left:50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+
+      /* 위치를 변경해라 자신의 너비의 50% x축 밖으로 자신의 높이의 50% y축 위로 */
+
+      font-size:25px;
+      background-color: #68f;
+    }
+    .center-box .inner{  
+      text-align: center;
+      background-color: #f86;
+      padding:50px;
+    }
+
+    .center-box .inner p{
+
+      margin-bottom:0.5em;
+    }
+    .center-box .inner p:first-child{
+      font-size:1.5em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="center-box">
+      <div class="inner">
+        <p>section title</p>
+        <p>Lorem ipsum dolor sit</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

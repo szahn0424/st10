@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>양끝정렬</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    .wrap{
+      margin:auto;
+      margin-top: 100px;
+      background-color: #ccc;
+    }
+    /* 레이아웃 */
+    header{
+      background-color: #666;
+    }
+
+    header .inner{
+      width:90%;
+      max-width: 1400px;
+      background-color: rgba(249, 162, 0, 0.977);
+      border: 3px solid #000000;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .logo{width: 100px; height: 100px;}
+
+    .gnb{}
+
+    .util{
+      font-size: 12px;
+      background-color: red;
+      border: 3px solid #000;
+    }
+
+    .parent{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+       /*  */
+      align-items: center;
+    }
+
+    .item{
+      /* 아이템크기고정 */
+      flex: none;
+    }
+
+    .gnb.item{
+      margin-left: 2em;
+    }
+
+    .gnb.item{
+      margin: 0 auto;
+    }
+
+    .gnb.item{
+      flex-grow: 1;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="wrap">
+    <!-- header>inner>.logo+.gnb.utul -->
+    <header>
+      <div class="inner parent">
+        <div class="logo item">로고</div>
+        <div class="gnb item">카테고리(글로벌네비게이션바)카테고리(글로벌네비게이션바)</div>
+        <div class="util item">상단유틸메뉴</div>       
+      </div>
+    </header>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스2번스타일</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{
+      margin-top: 50px;
+    }
+
+    header{}
+    header .inner{
+      width:1400px;
+      margin:0 auto;
+    
+      background-color:aqua;
+    }
+
+    header .container{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo{
+      min-height: 100px;
+    }
+    header .top-menu{}
+
+    header .container >div{}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner container">
+        <div class="logo">로고</div>
+        <div class="top-menu">멘뉴</div>
+      </div>
+    </header>
+  </div>
+  
+</body>
+</html>

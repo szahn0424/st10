@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{margin: 0; padding: 0;}
+    .wrap{}
+
+    .media-box{
+      background-color: #ccc;
+      position:relative;
+      overflow: hidden;
+    }
+
+    .media-box:after{
+      content:'';
+      position: absolute;
+      left:0; top:0; width:100%; height: 100%;
+      background-color: rgba(72, 72, 248, 0.281);
+    }
+
+    /* 크기지정 */
+
+    .full-page{  
+
+      /* 브라우저의 크기를 가로세로 다사용 */
+
+      width:100%;
+      height: 100vh;
+      
+    }
+
+    .media-box .media-wrap{
+
+      position: relative;
+      width: 100%;
+      height:100vh;
+      box-sizing: border-box;
+      padding-top:56.25%;
+      overflow: hidden;
+
+      /* 미디어 기준 */
+    }
+
+    /* 동영상의 비율을 지정 */
+
+    .media-box .media-wrap .media{
+
+      position: absolute;
+      left:50%; top:50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 미디어랩의 가로세로크기를 따르게 */
+
+    .wrap{position: relative;}
+
+    /* 기준조상이 되기 위해 */
+
+    .slogan{
+      width: 80%;
+      color:white;
+      font-size: 1.5em;
+      left:100px;
+      top:200px;
+      /* background-color: #ccc; */
+      position:absolute;
+      /* .wrap 기준조상 */
+    }
+
+
+    .slogan .txt1{
+      font-size: 1.5em;
+    }
+
+    .slogan .txt2{
+      font-size: 2.5em;
+      font-weight: bold;
+      padding-bottom: 0.5em;
+      position: relative;
+      text-shadow: 0px 0px 2px rgb(15 51 98);
+
+    }
+
+
+    /* .txt2 .txt3 사이에 120px너비 5px높이 흰색바 표시 */
+
+    .slogan .txt2:after{
+
+      content:'';
+      display: block;
+      width: 120px;; height: 5px;
+      background-color: #fff;
+      position: absolute;
+      left:0px; bottom:0.3em;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="media-box full-page">
+      <div class="media-wrap">
+        <video class="media" controls autoplay loop muted>
+        <source src="./asset/media/pexels-taryn-elliott-5614887 (2160p).mp4">
+      </video>
+      </div>
+    </div>
+    <div class="slogan">
+      <p class="txt1">lorem3, ipsum dolor.</p>
+      <p class="txt2">lorem2 ipsum dolor ipsum dolor.</p>
+      <p class="txt3">lorem1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ut autem est nesciunt nisi repellat odio, excepturi saepe, ratione aut harum quae quibusdam consequatur aliquid! Inventore pariatur omnis quae ipsam!</p>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라이드상품목록연습</title>
+  <link rel="stylesheet" href="./asset/css/cafe24reset.css">
+  <style>
+    .wrap{
+      max-width:1240px;
+      
+      margin: 50px auto 0px;
+    }
+
+    .ec-base-produt{}
+    .ec-base-produt .prdList{
+      background-color: #ccc;
+      overflow: hidden;
+    }
+    .ec-base-produt .prdList >li{
+      /* display:inline-block; */
+      position: relative;
+      box-sizing: border-box;
+      background-color: #f68;
+      float: left;
+      padding:0 10px;
+      /* border:1px solid red; */
+    }
+
+    .ec-base-produt .prdList .description{
+      position: absolute;
+      left:0px; bottom:0px;
+
+
+      transform: translate(0,100%);
+
+
+      background-color: rgba(232, 3, 3, 0.629);
+      width:100%;
+      padding: 1em;
+      box-sizing: border-box;
+      /* 일반흐름에서 제외되었지만 기준조상으로 너비를 가져옵니다. */
+    }
+
+    .ec-base-produt .prdList::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .ec-base-produt .grid2 >li{width:50%;}
+    .ec-base-produt .grid3 >li{width:33.333%;}
+    .ec-base-produt .grid4 >li{width:25%;}
+    .ec-base-produt .grid5 >li{width:20%;}
+
+
+    .ec-base-produt .prdList >li .icon__box{
+      position: absolute;
+      /* 일반흐름제외,기준요소설정 */
+      /* 위치설정 */
+      right: 0px; top:0px;
+    }
+
+    .ec-base-produt .prdList .thumbnail{
+      /* position: relative; */
+      /* .ec-base-produt .prdList >li .icon__box 의 기준조상이 되기위해 */
+    }
+
+    .ec-base-produt .prdList >li .icon__box >span{
+      display: block;
+    }
+
+    .ec-base-produt .prdList .description{
+      /* 본인요소의 크기만큼 y축으로 이동 */
+    }
+
+
+    .ec-base-produt .prdList >li:hover .description{
+      transform:translate(0,0);
+      background-color: rgba(0, 255, 255, 0.675);
+      transition:all 0.3s;
+
+
+    }
+
+    /* .ec-base-produt .prdList .description */
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="wrap">
+      <div class="ec-base-produt">
+        <div class="maimTitle"></div>
+        <ul class="prdList grid4">
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span class="wish"><img src="asset/img/icon_202107202127542500.png" alt=""></span>
+                <span class="cart"><img src="asset/img/icon_202107191654165100.png" alt=""></span></div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description">
+              <!-- div.name+ul.spec>li*2^div.icon -->
+              <div class="name">상품명</div>
+              <ul class="spec">
+                <li>8000원</li>
+                <li>6000원</li>
+              </ul>
+              <div class="icon">아이콘</div>
+            </div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span class="wish"><img src="asset/img/icon_202107202127542500.png" alt=""></span>
+                <span class="cart"><img src="asset/img/icon_202107191654165100.png" alt=""></span></div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description">
+              <div class="name">상품명</div>
+              <ul class="spec">
+                <li>8000원</li>
+                <li>6000원</li>
+              </ul>
+              <div class="icon">아이콘</div>
+            </div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span class="wish"><img src="asset/img/icon_202107202127542500.png" alt=""></span>
+                <span class="cart"><img src="asset/img/icon_202107191654165100.png" alt=""></span></div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description">
+              <div class="name">상품명
+              <ul class="spec">
+                <li>8000원</li>
+                <li>6000원</li>
+              </ul>
+              <div class="icon">아이콘</div>
+            </div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span class="wish"><img src="asset/img/icon_202107202127542500.png" alt=""></span>
+                <span class="cart"><img src="asset/img/icon_202107191654165100.png" alt=""></span></div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description">
+              <div class="name">상품명</div>
+              <ul class="spec">
+                <li>8000원</li>
+                <li>6000원</li>
+              </ul>
+              <div class="icon">아이콘</div>
+            </div>
+          </li>
+
+
+
+
+
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

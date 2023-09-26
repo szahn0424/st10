@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexitem의 정렬3 여백균등배치</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{
+      width:90%; margin: 0 auto;
+      background-color: #ccc;
+    }
+    .parent{background-color: #0008ff;}
+    .child{background-color: rgb(79, 89, 227); border: 1px solid #000; padding:2em; }
+
+    /* flexbox 속성 선언 */
+    .container{display:flex; min-height: 300px;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+    .item{
+      /* flex-grow: 0;
+      flex-shrink:1;
+      flex-basis: auto; */
+    }
+
+    .item:last-child{
+      align-self:flex-start;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="parent container">
+      <div class="child item">item1</div>
+      <div class="child item">item2</div>
+      <div class="child item">item3</div>
+      <div class="child item">item4</div>
+    </div>
+  </div>
+  
+</body>
+</html>

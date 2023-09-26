@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스1번스타일</title>
+  <style>
+    *{margin: 0; padding: 0;box-sizing: border-box;}
+
+    .wrap{}
+
+    .parent{
+      background-color: rgba(0, 89, 255, 0.905);
+      height:400px;
+    }
+
+    .child{
+      background-color: #d8d7d7;
+      color:#000;
+      font-size: 2em;
+      padding: 1em;
+    }
+
+    .child p{
+      background-color: #d8d7d7;
+      color:black;
+      border: 1px solid #000;
+      max-width: 500px;
+
+    }
+
+    .child p:last-child{
+      font-size: 0.4em;
+    }
+
+    /* flex속성 */
+
+    .container{
+      display: flex;
+      /* flex-direction: row; */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .item p{
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto; 
+      /* 높이 선언되어있으면 높이만큼 아니면 컨텐츠양만큼 */
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>수직 수평 가운데정렬</h1>
+  <h2>
+    <p>주축정렬 justify-content:center</p>
+    <p>교차축정렬 align-items:center</p>
+    <p>아이템크기는 고정 flex:none</p>
+  
+  </h2>
+  <div class="warp">
+    <div class="parent container">
+      <div class="child item">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid sunt esse iusto corrupti saepe eaque obcaecati deserunt nesciunt magni, laudantium quaerat ipsam voluptas at. Nulla sunt suscipit quod repudiandae?</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

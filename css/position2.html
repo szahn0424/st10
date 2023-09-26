@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    .wrap{
+
+      /* .box3의 기준조상이되기 위해서 */
+
+      margin:100px;
+      padding:100px;
+      border:10px dotted black;
+      background-color: #ccc;
+      box-sizing: border-box;
+      height: 2000px;
+    }
+
+    .box{
+      background-color: #fff;
+    }
+
+    .box:nth-child(even){
+    background-color: #f68;
+    }
+    .box:nth-child(odd){
+    background-color: #86f;
+    }
+
+    .box{
+      width:200px; height:200px;
+    }
+
+    .box1{
+      position:static;
+      left:100px; top:100px;
+      /* static은 left/right/top 영향력이 읍다 */
+    }
+
+    .box2{
+
+      /* 일반흐름 */
+      position:relative;
+      /* position:relative;는 위치가능 / 기본위치는 원래자신의 위치 */
+      left:50px; top:-50px;
+    }
+
+    .box3{
+      /* 일반흐름에서 제외 */
+      position:absolute;
+      /* 기준위치 
+      조상중에 position값이 relative,fixed,absolute 가 지정되어있는 가까운 조상이 기준위치가 됨*/
+      left:0px; top:0px;
+      border: 10px solid #000;
+    }
+
+    .box3 .inner{
+      padding:16px;
+      background-color: red;
+    }
+
+    .box3 .inner p{
+      background-color: blue;
+      position:absolute;
+      /* 위치가능, 기준위치확인 */
+      /* left:0px; top:0px; */
+      /* 일반흐름에서 제외 */
+      right:0; bottom: 0;
+    }
+
+    .box4{
+      /* 일반흐름에서 제외 */
+      position:fixed;
+      left: 0; top:0;
+      
+    }
+
+    .box5{
+      position: fixed;
+    }
+
+    .box6{
+      position: fixed;
+      left:0;
+      top:0;
+      width: 100%;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="box box1">
+      <div class="inner">
+        <p>box1</p>
+      </div>
+    </div>
+    <div class="box box2">
+      <div class="inner">
+        <p>box2</p>
+      </div>
+    </div>
+    <div class="box box3">
+      <div class="inner">
+        <p>box3</p>
+      </div>
+    </div>
+    <div class="box box4">
+      <div class="inner">
+        <p>box4</p>
+      </div>
+    </div>
+    <div class="box box5">
+      <div class="inner">
+        <p>box5</p>
+      </div>
+    </div>
+    <div class="box box6">
+      <div class="inner">
+        <p>box6</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
